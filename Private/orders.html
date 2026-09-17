@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O Sweets | Orders</title>
+<meta name="description" content="View O Sweets products and submit an order for colourful and delicious sweets.">
+<meta name="keywords" content="O Sweets, sweet orders, gummy sweets, mixed sweets, fruit sweets, sweets Pretoria">
+<link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="../Images/logo.png" alt="O Sweets Logo" width="180">
+
+        <h1>O Sweets</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="orders.html">Orders</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Our Sweets</h2>
+
+            <p>
+                O Sweets offers a selection of colourful and tasty sweets.
+                Below are some of the products available to order.
+            </p>
+
+<label for="productSearch">Search for a sweet:</label>
+<input type="text"
+       id="productSearch"
+       placeholder="Type a sweet name">
+
+<div id="productList">
+
+<article>
+            <article>
+
+                <h3>Colourful Gummies</h3>
+
+                <img src="../Images/sweets1.png"
+                     alt="Colourful gummy sweets"
+                    class="product-image">
+
+                <p>
+                    A selection of colourful gummy sweets with different
+                    shapes and flavours.
+                </p>
+
+                <p><strong>Price: R35 per 100g</strong></p>
+
+            </article>
+
+            <article>
+
+                <h3>Mixed Sweets</h3>
+                <img src="../Images/sweets2.png"
+                     alt="Mixed colourful sweets"
+                     class="product-image">
+
+                <p>
+                    A mixed selection of sweets for customers who enjoy
+                    different flavours and textures.
+                </p>
+
+                <p><strong>Price: R40 per 100g</strong></p>
+
+            </article>
+
+            <article>
+
+                <h3>Fruit Flavoured Sweets</h3>
+                <img src="../Images/sweets3.png"
+                     alt="Fruit flavoured sweets"
+                     class="product-image">
+
+                <p>
+                    Colourful fruit flavoured sweets that are suitable for
+                    parties, gifts or everyday treats.
+                </p>
+                <p><strong>Price: R35 per 100g</strong></p>
+
+            </article>
+
+</div>
+
+        </section>
+
+        <section>
+
+            <h2>Place an Order</h2>
+
+            <p>
+                Complete the form below to send an order request to O Sweets.
+            </p>
+
+            <form id="orderForm">
+
+                <label for="customerName">Full Name:</label>
+                <input type="text"
+                       id="customerName"
+                       name="customerName"
+                       required>
+
+                <label for="orderEmail">Email Address:</label>
+                <input type="email"
+                       id="orderEmail"
+                       name="orderEmail"
+                       required>
+
+                <label for="orderPhone">Phone Number:</label>
+                <input type="tel"
+                       id="orderPhone"
+                       name="orderPhone"
+                       required>
+
+                <label for="sweet">Choose a Sweet:</label>
+
+                <select id="sweet" name="sweet" required>
+
+                    <option value="">Select a product</option>
+
+                    <option value="Colourful Gummies">
+                        Colourful Gummies
+                    </option>
+
+                    <option value="Mixed Sweets">
+                        Mixed Sweets
+                    </option>
+
+                    <option value="Fruit Flavoured Sweets">
+                        Fruit Flavoured Sweets
+                    </option>
+
+                </select>
+
+                <label for="quantity">Quantity (100g):</label>
+
+                <input type="number"
+                       id="quantity"
+                       name="quantity"
+                       min="1"
+                       required>
+
+                <label for="method">Collection or Delivery:</label>
+
+                <select id="method" name="method" required>
+
+                    <option value="">Select an option</option>
+
+                    <option value="collection">
+                        Collection
+                    </option>
+
+                    <option value="delivery">
+                        Delivery
+                    </option>
+
+                </select>
+
+                <label for="instructions">
+                    Additional Instructions:
+                </label>
+
+                <textarea id="instructions"
+                          name="instructions"
+                          rows="5"
+                          placeholder="Enter any additional information about your order."></textarea>
+
+                <button type="submit">Place Order</button>
+
+                <button type="reset">Clear Form</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 O Sweets. All rights reserved.</p>
+
+    </footer>
+
+    <script src="../JS/script.js"></script>
+
+</body>
+
+</html>
