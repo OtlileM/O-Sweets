@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>O Sweets | Enquiry</title>
+<meta name="description" content="Contact O Sweets with questions about our sweets, products, prices and orders.">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <img src="../Images/logo.png" alt="O Sweets Logo" width="180">
+
+        <h1>O Sweets</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="orders.html">Orders</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>Make an Enquiry</h2>
+
+            <p>
+                If you have a question about our sweets, orders or services,
+                please complete the enquiry form below.
+            </p>
+
+            <p>
+                We will use the information provided to respond to your
+                enquiry.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Enquiry Form</h2>
+
+            <form id="enquiryForm">
+
+                <label for="name">First Name:</label>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+
+                <label for="surname">Surname:</label>
+
+                <input type="text"
+                       id="surname"
+                       name="surname"
+                       required>
+
+                <label for="email">Email Address:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <label for="phone">Phone Number:</label>
+
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       required>
+
+                <label for="subject">Subject:</label>
+
+                <select id="subject"
+                        name="subject"
+                        required>
+
+                    <option value="">Select a subject</option>
+
+                    <option value="products">
+                        Product Information
+                    </option>
+
+                    <option value="orders">
+                        Order Information
+                    </option>
+
+                    <option value="pricing">
+                        Pricing
+                    </option>
+
+                    <option value="other">
+                        Other
+                    </option>
+
+                </select>
+
+                <label for="message">Message:</label>
+
+                <textarea id="message"
+                          name="message"
+                          rows="6"
+                          placeholder="Enter your enquiry here..."
+                          required></textarea>
+
+                <button type="submit">Send Enquiry</button>
+
+                <button type="reset">Clear Form</button>
+
+            </form>
+
+        </section>
+
+        <section>
+
+            <h2>Other Ways to Contact Us</h2>
+
+            <p>
+                You can also visit our Contact page to find our contact
+                information.
+            </p>
+
+            <a href="contact.html">Contact O Sweets</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 O Sweets. All rights reserved.</p>
+
+    </footer>
+
+    <script src="../JS/script.js"></script>
+
+</body>
+
+</html>
